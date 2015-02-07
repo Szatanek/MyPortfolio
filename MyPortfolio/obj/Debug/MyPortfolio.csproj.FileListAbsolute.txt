@@ -24,3 +24,8 @@ C:\Users\Milosz\Documents\Visual Studio 2013\Projects\MyPortfolio\MyPortfolio\bi
 C:\Users\Milosz\Documents\Visual Studio 2013\Projects\MyPortfolio\MyPortfolio\obj\Debug\MyPortfolio.csprojResolveAssemblyReference.cache
 C:\Users\Milosz\Documents\Visual Studio 2013\Projects\MyPortfolio\MyPortfolio\obj\Debug\MyPortfolio.dll
 C:\Users\Milosz\Documents\Visual Studio 2013\Projects\MyPortfolio\MyPortfolio\obj\Debug\MyPortfolio.pdb
+C:\Users\Milosz\Documents\Visual Studio 2013\Projects\MyPortfolio\MyPortfolio\bin\Antlr3.Runtime.dll
+C:\Users\Milosz\Documents\Visual Studio 2013\Projects\MyPortfolio\MyPortfolio\bin\System.Web.Optimization.dll
+C:\Users\Milosz\Documents\Visual Studio 2013\Projects\MyPortfolio\MyPortfolio\bin\WebGrease.dll
+C:\Users\Milosz\Documents\Visual Studio 2013\Projects\MyPortfolio\MyPortfolio\bin\Antlr3.Runtime.pdb
+C:\Users\Milosz\Documents\Visual Studio 2013\Projects\MyPortfolio\MyPortfolio\bin\System.Web.Optimization.xml

@@ -11,6 +11,7 @@ namespace MyPortfolio.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            ViewBag.Title = "Miłosz Wieczorek - my portfolio";
             return View();
         }
     }

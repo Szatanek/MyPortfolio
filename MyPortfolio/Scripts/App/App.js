@@ -1,11 +1,14 @@
 var App;
-(function (_App) {
-    var App = (function () {
-        function App() {
-            _App.PortfolioViewModel.createPortfolioViewModel();
+(function (App) {
+    var viewModel;
+    function setViewModel(viewModel) {
+        if (this.viewModel) {
+            ko.cleanNode($("#content")[0]);
+            this.viewModel = null;
         }
-        return App;
-    })();
-    _App.App = App;
+        this.viewModel = viewModel;
+        ko.applyBindings(viewModel, $("#content")[0]);
+    }
+    App.setViewModel = setViewModel;
 })(App || (App = {}));
 //# sourceMappingURL=App.js.map

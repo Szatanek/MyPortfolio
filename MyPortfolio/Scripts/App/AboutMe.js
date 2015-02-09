@@ -9,12 +9,8 @@ var App;
     var AboutMeViewModel = (function (_super) {
         __extends(AboutMeViewModel, _super);
         function AboutMeViewModel() {
-            _super.apply(this, arguments);
+            _super.call(this);
         }
-        AboutMeViewModel.CreateAboutMeViewModel = function () {
-            App.App.viewModel = new AboutMeViewModel();
-            ko.applyBindings();
-        };
         return AboutMeViewModel;
     })(App.BaseViewModel);
     App.AboutMeViewModel = AboutMeViewModel;

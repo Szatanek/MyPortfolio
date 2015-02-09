@@ -9,11 +9,17 @@ var App;
     var ExperienceViewModel = (function (_super) {
         __extends(ExperienceViewModel, _super);
         function ExperienceViewModel() {
-            _super.apply(this, arguments);
+            _super.call(this);
+            this.subcategories = [
+                new App.Subcategory('inSolutions'),
+                new App.Subcategory('Tectocom'),
+                new App.Subcategory('Future Processing')
+            ];
         }
-        ExperienceViewModel.CreateExperienceViewModel = function () {
-            App.App.viewModel = new ExperienceViewModel();
-            ko.applyBindings();
+        ExperienceViewModel.SetExperienceViewModel = function () {
+            var viewModel = new ExperienceViewModel();
+            App.setViewModel(viewModel);
+            alert('Experience view model set');
         };
         return ExperienceViewModel;
     })(App.BaseViewModel);

@@ -17,8 +17,8 @@ namespace MyPortfolio.App_Start
 
             bundles.Add(new ScriptBundle("~/Scripts/application")
                 .Include("~/Scripts/App/App.js")
-                .Include("~/Scripts/App/AboutMe.js")
                 .Include("~/Scripts/App/BaseViewModel.js")
+                .Include("~/Scripts/App/AboutMe.js")
                 .Include("~/Scripts/App/Experience.js")
                 .Include("~/Scripts/App/Portfolio.js"));
 

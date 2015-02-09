@@ -9,14 +9,21 @@ var App;
     var PortfolioViewModel = (function (_super) {
         __extends(PortfolioViewModel, _super);
         function PortfolioViewModel() {
-            _super.apply(this, arguments);
+            _super.call(this);
+            this.subcategories = [
+                new App.Subcategory("first subcategory"),
+                new App.Subcategory("second subcategory"),
+                new App.Subcategory("Another subcategory")
+            ];
         }
-        PortfolioViewModel.createPortfolioViewModel = function () {
-            App.App.viewModel = new PortfolioViewModel();
-            ko.applyBindings();
+        PortfolioViewModel.SetPortfolioViewModel = function () {
+            var viewModel = new PortfolioViewModel();
+            App.setViewModel(viewModel);
+            alert('Portfolio view model set');
         };
         return PortfolioViewModel;
     })(App.BaseViewModel);
     App.PortfolioViewModel = PortfolioViewModel;
+    App.PortfolioViewModel.SetPortfolioViewModel();
 })(App || (App = {}));
 //# sourceMappingURL=Portfolio.js.map

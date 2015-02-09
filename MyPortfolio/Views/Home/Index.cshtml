@@ -1,9 +1,23 @@
 ﻿<header class="menu">
-    To jest nagłówek
+    <div id="category-list">
+        <div class="category highlitable clickable" data-bind="click: portfolioActive">
+            Portfolio
+        </div>
+        <div class="category highlitable clickable" data-bind="click: experienceActive">
+            Work experience
+        </div>
+        <div class="category highlitable clickable" data-bind="click: aboutMeActive">
+            About me
+        </div>
+    </div>
 </header>
 
 <div id="left-pane" class="menu">
-    To jest lewy panel
+    <div id="subcategory-list" data-bind="foreach: subcategories">
+        <div class="subcategory highlitable clickable">
+            <span data-bind="text: name"></span>
+        </div>
+    </div>
 </div>
 
 <article>

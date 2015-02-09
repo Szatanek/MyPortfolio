@@ -1,10 +1,14 @@
 ﻿module App {
+    var viewModel: BaseViewModel;
 
-    export class App {
-        constructor() {
-            PortfolioViewModel.createPortfolioViewModel();
+    export function setViewModel(viewModel: BaseViewModel): void{
+        if (this.viewModel) {
+            ko.cleanNode($("#content")[0]);
+            this.viewModel = null;
         }
 
-        static viewModel: BaseViewModel;
+
+        this.viewModel = viewModel;
+        ko.applyBindings(viewModel, $("#content")[0]);
     }
 }

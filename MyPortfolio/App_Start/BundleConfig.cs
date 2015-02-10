@@ -17,10 +17,12 @@ namespace MyPortfolio.App_Start
 
             bundles.Add(new ScriptBundle("~/Scripts/application")
                 .Include("~/Scripts/App/App.js")
-                .Include("~/Scripts/App/BaseViewModel.js")
-                .Include("~/Scripts/App/AboutMe.js")
-                .Include("~/Scripts/App/Experience.js")
-                .Include("~/Scripts/App/Portfolio.js"));
+                .Include("~/Scripts/App/ViewModel.js")
+                .Include("~/Scripts/App/Base/BaseCategory.js")
+                .Include("~/Scripts/App/Base/BaseSubcategory.js")
+                .Include("~/Scripts/App/Categories/AboutMe.js")
+                .Include("~/Scripts/App/Categories/Experience.js")
+                .Include("~/Scripts/App/Categories/Portfolio.js"));
 
             bundles.Add(new ScriptBundle("~/Styles/layout")
                 .Include("~/Content/App.css")

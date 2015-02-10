@@ -1,14 +1,9 @@
 ﻿module App {
-    var viewModel: BaseViewModel;
 
-    export function setViewModel(viewModel: BaseViewModel): void{
-        if (this.viewModel) {
-            ko.cleanNode($("#content")[0]);
-            this.viewModel = null;
-        }
+    $(document).ready(() => {
+        var viewModel: App.ViewModel;
+        viewModel = new App.ViewModel();
+        ko.applyBindings(viewModel)
+    });
 
-
-        this.viewModel = viewModel;
-        ko.applyBindings(viewModel, $("#content")[0]);
-    }
 }

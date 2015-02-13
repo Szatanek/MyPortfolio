@@ -1,25 +1,16 @@
-﻿<header class="menu">
-    <div id="category-list">
-        <div class="category highlitable clickable" data-bind="click: portfolioActive">
-            Portfolio
+﻿<div id="content">
+    <div id="left-pane" class="menu">
+        <div id="my-photo">
         </div>
-        <div class="category highlitable clickable" data-bind="click: experienceActive">
-            Work experience
-        </div>
-        <div class="category highlitable clickable" data-bind="click: aboutMeActive">
-            About me
-        </div>
-    </div>
-</header>
 
-<div id="left-pane" class="menu">
-    <div id="subcategory-list" data-bind="foreach: category().subcategories">
-        <div class="subcategory highlitable clickable">
-            <span data-bind="text: name"></span>
+        <div id="subcategory-list" data-bind="foreach: category().subcategories">
+            <div class="subcategory highlitable clickable" data-bind="click: active, css: {selected: isSelected}">
+                <span data-bind="text: name"></span>
+            </div>
         </div>
     </div>
+
+    <article data-bind="style: {height: getArticleHeight}">
+        To jest właściwy content
+    </article>
 </div>
-
-<article>
-    To jest właściwy content
-</article>

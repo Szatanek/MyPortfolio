@@ -4,28 +4,40 @@
 
         categories: Array<BaseCategory>;
         category: KnockoutObservable<BaseCategory>;
+        getArticleHeight: KnockoutComputed<string>;
 
         constructor() {
             this.categories = [
-                new AboutMeCategory("About me"),
+                new Portfolio("Portfolio"),
                 new ExperienceCategory("My experience"),
-                new Portfolio("Portfolio")
+                new AboutMeCategory("About me")
             ];
-
-            this.category = ko.observable(this.categories[2]);
+            this.category = ko.observable<BaseCategory>(this.categories[0]);
+            this.getArticleHeight = ko.computed<string>((): string => this.getHeight());
         }
 
-
-        portfolioActive(): void {
-            this.category(this.categories[2]);
+        setCategory(category: BaseCategory): void {
+            this.cleanCategories();
+            this.category(category);
         }
 
-        experienceActive(): void {
-            this.category(this.categories[1]);
+        getCategoryWidth(): string {
+            return (100 / this.categories.length).toString + '%';
         }
 
-        aboutMeActive(): void {
-            this.category(this.categories[0]);
+        getHeight(): string {
+            if (this.category().subcategories.length > 0) {
+                return $("#left-pane").height() - 100 + 10 + "px";
+            }
+
+            $("article").removeAttr("height");
+            return '0px';
+        }
+
+        private cleanCategories(): void {
+            ko.utils.arrayForEach(this.categories,(category: BaseCategory) => {
+                category.isSelected(false);
+            });
         }
     }
 } 

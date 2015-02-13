@@ -1,9 +1,10 @@
 ﻿module App {
+    export var viewModel: ViewModel;
 
     $(document).ready(() => {
-        var viewModel: App.ViewModel;
         viewModel = new App.ViewModel();
         ko.applyBindings(viewModel)
+        viewModel.categories[0].active();
     });
 
 }

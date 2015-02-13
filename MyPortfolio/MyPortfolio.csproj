@@ -108,6 +108,7 @@
     <Content Include="Content\AboutMe.css" />
     <Content Include="Content\App.css" />
     <Content Include="Content\Experience.css" />
+    <Content Include="Content\img\profil.jpg" />
     <Content Include="Content\Portfolio.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -150,6 +151,9 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Home\AboutMe\" />
+    <Folder Include="Views\Home\Experience\" />
+    <Folder Include="Views\Home\Portfolio\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\App\Categories\AboutMe.ts" />

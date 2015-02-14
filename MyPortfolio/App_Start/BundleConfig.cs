@@ -24,6 +24,14 @@ namespace MyPortfolio.App_Start
                 .Include("~/Scripts/App/Categories/Experience.js")
                 .Include("~/Scripts/App/Categories/Portfolio.js"));
 
+            bundles.Add(new ScriptBundle("~/Scripts/subcategories")
+                .Include("~/Scripts/App/Subcategories/Portfolio/Reports.js")
+                .Include("~/Scripts/App/Subcategories/Portfolio/Paint.js")
+                .Include("~/Scripts/App/Subcategories/Portfolio/Meds.js")
+                .Include("~/Scripts/App/Subcategories/Portfolio/TCP.js")
+                .Include("~/Scripts/App/Subcategories/Experience/FP.js")
+                .Include("~/Scripts/App/Subcategories/Experience/inSolutions.js"));
+
             bundles.Add(new ScriptBundle("~/Styles/layout")
                 .Include("~/Content/App.css")
                 .Include("~/Content/AboutMe.css")

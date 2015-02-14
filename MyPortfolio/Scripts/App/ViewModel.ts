@@ -9,15 +9,17 @@
         constructor() {
             this.categories = [
                 new Portfolio("Portfolio"),
-                new ExperienceCategory("My experience"),
-                new AboutMeCategory("About me")
+                new Experience("My experience"),
+                new AboutMe("About me")
             ];
             this.category = ko.observable<BaseCategory>(this.categories[0]);
             this.getArticleHeight = ko.computed<string>((): string => this.getHeight());
         }
 
         setCategory(category: BaseCategory): void {
-            this.cleanCategories();
+            this.category().clearSubcategory();
+            this.category().isSelected(false);
+
             this.category(category);
         }
 
@@ -32,12 +34,6 @@
 
             $("article").removeAttr("height");
             return '0px';
-        }
-
-        private cleanCategories(): void {
-            ko.utils.arrayForEach(this.categories,(category: BaseCategory) => {
-                category.isSelected(false);
-            });
         }
     }
 } 

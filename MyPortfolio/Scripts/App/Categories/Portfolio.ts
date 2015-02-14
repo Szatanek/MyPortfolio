@@ -4,9 +4,10 @@
             super(name);
 
             this.subcategories = [
-                new BaseSubcategory("first subcategory"),
-                new BaseSubcategory("second subcategory"),
-                new BaseSubcategory("Another subcategory")
+                new Reports(),
+                new Paint(),
+                new Meds(),
+                new TCP()
             ];
         }
     }

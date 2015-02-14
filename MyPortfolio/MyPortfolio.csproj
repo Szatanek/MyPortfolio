@@ -141,6 +141,15 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-2.1.3.min.map" />
+    <Content Include="Views\Portfolio\Reports.cshtml" />
+    <Content Include="Views\Experience\Experience.cshtml" />
+    <Content Include="Views\Portfolio\Portfolio.cshtml" />
+    <Content Include="Views\Experience\FP.cshtml" />
+    <Content Include="Views\Experience\inSolutions.cshtml" />
+    <Content Include="Views\AboutMe\AboutMe.cshtml" />
+    <Content Include="Views\Portfolio\Paint.cshtml" />
+    <Content Include="Views\Portfolio\Meds.cshtml" />
+    <Content Include="Views\Portfolio\TCP.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -151,15 +160,18 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Home\AboutMe\" />
-    <Folder Include="Views\Home\Experience\" />
-    <Folder Include="Views\Home\Portfolio\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\App\Categories\AboutMe.ts" />
     <TypeScriptCompile Include="Scripts\App\App.ts" />
     <TypeScriptCompile Include="Scripts\App\Base\BaseCategory.ts" />
     <TypeScriptCompile Include="Scripts\App\Base\BaseSubcategory.ts" />
+    <TypeScriptCompile Include="Scripts\App\Subcategories\Experience\FP.ts" />
+    <TypeScriptCompile Include="Scripts\App\Subcategories\Experience\inSolutions.ts" />
+    <TypeScriptCompile Include="Scripts\App\Subcategories\Portfolio\Meds.ts" />
+    <TypeScriptCompile Include="Scripts\App\Subcategories\Portfolio\Paint.ts" />
+    <TypeScriptCompile Include="Scripts\App\Subcategories\Portfolio\Reports.ts" />
+    <TypeScriptCompile Include="Scripts\App\Subcategories\Portfolio\TCP.ts" />
     <TypeScriptCompile Include="Scripts\App\ViewModel.ts" />
     <TypeScriptCompile Include="Scripts\App\Categories\Experience.ts" />
     <TypeScriptCompile Include="Scripts\App\Categories\Portfolio.ts" />

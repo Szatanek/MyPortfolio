@@ -4,13 +4,15 @@
         </div>
 
         <div id="subcategory-list" data-bind="foreach: category().subcategories">
-            <div class="subcategory highlitable clickable" data-bind="click: active, css: {selected: isSelected}">
+            <div class="subcategory highlitable clickable" data-bind="click: toggleSelected, css: {selected: isSelected}">
                 <span data-bind="text: name"></span>
             </div>
         </div>
     </div>
 
-    <article data-bind="style: {height: getArticleHeight}">
-        To jest właściwy content
+    <article data-bind="style: {height: getArticleHeight}, with: category">
+        @Html.Partial("../Portfolio/Portfolio")
+        @Html.Partial("../Experience/Experience")
+        @Html.Partial("../AboutMe/AboutMe")
     </article>
 </div>

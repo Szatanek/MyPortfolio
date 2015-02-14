@@ -9,7 +9,12 @@
             this.isSelected = ko.observable(false);
         }
 
-        active() {
+        toggleSelected() {
+            if (this.isSelected()) {
+                viewModel.category().clearSubcategory();
+                return;
+            }
+
             viewModel.category().setSubcategory(this);
             this.isSelected(true);
         }

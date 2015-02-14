@@ -1,0 +1,15 @@
+﻿<!-- ko if: name == "Portfolio"-->
+<div id="portfolio">
+    <!-- ko if: !subcategory() -->
+    <div id="portfolio-main">
+        This is my portfolio category.
+    </div>
+    <!-- /ko -->
+    <!-- ko with: subcategory-->
+    @Html.Partial("~/Views/Portfolio/Reports.cshtml")
+    @Html.Partial("~/Views/Portfolio/Paint.cshtml")
+    @Html.Partial("~/Views/Portfolio/Meds.cshtml")
+    @Html.Partial("~/Views/Portfolio/TCP.cshtml")
+    <!-- /ko -->
+</div>
+<!-- /ko -->

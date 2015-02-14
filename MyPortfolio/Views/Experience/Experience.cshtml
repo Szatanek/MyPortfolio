@@ -1,0 +1,13 @@
+﻿<!-- ko if: name == "My experience"-->
+<div id="portfolio">
+    <!-- ko if: !subcategory() -->
+    <div id="portfolio-main">
+        This is my experience category.
+    </div>
+    <!-- /ko -->
+    <!-- ko with: subcategory-->
+    @Html.Partial("~/Views/Experience/FP.cshtml")
+    @Html.Partial("~/Views/Experience/inSolutions.cshtml")
+    <!-- /ko -->
+</div>
+<!-- /ko -->

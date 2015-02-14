@@ -23,6 +23,15 @@
             this.subcategory(subcategory);
         }
 
+        clearSubcategory() {
+            if (!this.subcategory()) {
+                return;
+            }
+
+            this.subcategory().isSelected(false);
+            this.subcategory(null);
+        }
+
         private clearSubcategories(): void{
             ko.utils.arrayForEach(this.subcategories,(subcategory: BaseSubcategory) => {
                 subcategory.isSelected(false);

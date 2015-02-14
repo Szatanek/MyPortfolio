@@ -1,6 +1,6 @@
 ﻿module App {
     
-    export class AboutMeCategory extends BaseCategory {
+    export class AboutMe extends BaseCategory {
         constructor(name: string) {
             super(name);
         }

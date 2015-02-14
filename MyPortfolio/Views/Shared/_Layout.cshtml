@@ -9,14 +9,7 @@
     @Styles.Render("~/Styles/layout")
 </head>
 <body>
-    <div id="wrapper">
-        <header class="menu">
-            <div id="category-list" data-bind="foreach: categories">
-                <div class="category highlitable clickable" data-bind="click: active, style: $root.getCategoryWidth(), css:{ selected : isSelected}">
-                    <span data-bind="text: name"></span>
-                </div>
-            </div>
-        </header>       
+    <div id="wrapper"> 
         @RenderBody()
         <footer>
             <p>

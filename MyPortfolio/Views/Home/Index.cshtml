@@ -1,4 +1,11 @@
 ﻿<div id="content">
+    <header class="menu">
+        <div id="category-list" data-bind="foreach: categories">
+            <div class="category highlitable clickable" data-bind="click: active, style: $root.getCategoryWidth(), css:{ selected : isSelected}">
+                <span data-bind="text: name"></span>
+            </div>
+        </div>
+    </header>      
     <div id="left-pane" class="menu">
         <div id="my-photo">
         </div>
@@ -10,7 +17,7 @@
         </div>
     </div>
 
-    <article data-bind="style: {height: getArticleHeight}, with: category">
+    <article data-bind="with: category">
         @Html.Partial("../Portfolio/Portfolio")
         @Html.Partial("../Experience/Experience")
         @Html.Partial("../AboutMe/AboutMe")

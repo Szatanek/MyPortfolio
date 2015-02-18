@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 50, 50, 0.07);
     color: black;
 }
 
@@ -10,7 +10,7 @@ footer {
 header {
     height: 100px;
     width: calc(100% - 200px);
-    float: right;
+    float: left;
     border-radius: 0 10px 10px 0;
 }
 
@@ -20,22 +20,22 @@ header {
         width: 100%;
     }
 
-        header #category-list .category {
-            display: table-cell;
-            text-align: center;
-            line-height: 100px;
-            font-size: 20px;
-        }
-        
-        header #category-list .selected:last-of-type {
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-        }
+#category-list .category {
+    display: table-cell;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+}
 
-        header #category-list .highlitable:last-of-type:hover {
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-        }
+#category-list .selected:last-of-type {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#category-list .highlitable:last-of-type:hover {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
 #my-photo {
     width: 150px;
@@ -70,37 +70,40 @@ header {
         cursor: pointer;
     }
 
-#content {
+main {
     margin-bottom: 25px;
     overflow: hidden;
 }
 
-    #content #left-pane {
-        width: 200px;
-        float: left;
-        border-radius: 10px 0 0 10px;
-    }
+nav {
+    width: 200px;
+    float: left;
+    border-radius: 10px 0 0 10px;
+}
 
-    #content #left-pane .selected:last-of-type {
+    nav .selected:last-of-type {
         border-bottom-left-radius: 10px;
     }
 
-    #content #left-pane .highlitable:last-of-type:hover {     
+    nav .highlitable:last-of-type:hover {
         border-bottom-left-radius: 10px;
     }
 
-    #content #subcategory-list {
+#subcategory-list {
+}
+
+    #subcategory-list .subcategory {
+        padding-left: 15px;
+        height: 100px;
+        line-height: 100px;
     }
 
-        #content #subcategory-list .subcategory {
-            padding-left: 15px;
-            height: 100px;
-            line-height: 100px;
-        }
-        
-article {
+section {
+    float: left;
+    width: calc(100% - 200px);
     background-color: white;
-    border-radius: 10px 10px 0 10px;
-    padding: 100px 0 0 200px;
-    height: 400px;
+}
+
+article{
+    padding: 20px 50px;
 }

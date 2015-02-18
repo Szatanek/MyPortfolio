@@ -1,12 +1,5 @@
-﻿<div id="content">
-    <header class="menu">
-        <div id="category-list" data-bind="foreach: categories">
-            <div class="category highlitable clickable" data-bind="click: active, style: $root.getCategoryWidth(), css:{ selected : isSelected}">
-                <span data-bind="text: name"></span>
-            </div>
-        </div>
-    </header>      
-    <div id="left-pane" class="menu">
+﻿<main>
+    <nav class="menu">
         <div id="my-photo">
         </div>
 
@@ -15,11 +8,17 @@
                 <span data-bind="text: name"></span>
             </div>
         </div>
-    </div>
-
-    <article data-bind="with: category">
-        @Html.Partial("../Portfolio/Portfolio")
-        @Html.Partial("../Experience/Experience")
-        @Html.Partial("../AboutMe/AboutMe")
-    </article>
-</div>
+    </nav>
+    <header class="menu">
+        <div id="category-list" data-bind="foreach: categories">
+            <div class="category highlitable clickable" data-bind="click: active, style: $root.getCategoryWidth(), css:{ selected : isSelected}">
+                <span data-bind="text: name"></span>
+            </div>
+        </div>
+    </header>      
+    <section data-bind="with: category">
+            @Html.Partial("../Portfolio/Portfolio")
+            @Html.Partial("../Experience/Experience")
+            @Html.Partial("../AboutMe/AboutMe")
+    </section>
+</main>

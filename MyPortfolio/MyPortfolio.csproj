@@ -109,6 +109,9 @@
     <Content Include="Content\App.css" />
     <Content Include="Content\Experience.css" />
     <Content Include="Content\img\profil.jpg" />
+    <Content Include="Content\img\reports\module.jpg" />
+    <Content Include="Content\img\reports\report.jpg" />
+    <Content Include="Content\img\reports\server-block.jpg" />
     <Content Include="Content\Portfolio.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

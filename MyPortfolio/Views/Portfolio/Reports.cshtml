@@ -1,5 +1,54 @@
-﻿<!-- ko if: name == "Reporting application" -->
-<div id="reports">
-    There should be sth about reports application.
+﻿<div id="reports" data-bind="if: name == 'Reporting application'">
+    <div class="description">
+        <h2>Report generator application.</h2>
+        <p>
+            I have written the application for report generation as a part of my master thesis.
+            The application was supposed to retreive data from the external system - this external system
+            was the SCADA (Supervisory Control And Data Aquisition) application.
+            This SCADA application was working in the Data Center - a hudge facility with many
+            servers and even more responsibilities.
+        </p>
+        <h4>Brief overview of the application</h4>
+        <p>
+            The application had full CRUD (Create, Remove, Update, Delete) functionalities for modules,
+            server blocks and clients.
+            Clients data was the main purpose of creating the application because they weren't included in
+            the SCADA system.
+            Every server block could have only one client, so each client could have many server blocks.
+        </p>
+        <p>
+            Retreived data from the SCADA system contained average temperature and humidity in module and
+            power usage of each block of servers.
+            This data after some transformations was used to generate a report.
+        </p>
+        <h4>Technologies & frameworks</h4>
+        <p>
+            The report generation application was written in the .NET Framework 4.0 technology using Windows Forms.
+            The application was written with usage od the MVP (Model - View - Presenter) design pattern.
+            That allowed to slice the application into three layers.
+            Reports were generated using the Microsoft Reports Designer for Visual Studio and Microsoft Report Viewer
+            for Visual Studio.
+        </p>
+        <h4>Benefits and opportunities</h4>
+        <p>
+            This application was the first big application wrote entirly by myself at home.
+            That let me to sum up my whole knowledge about programming that I currently had.
+            I had to find out how to transfer data between SCADA system and my application, design the database and
+            in finite time make the application working and generating reports.
+        </p>
+    </div>
+    <div class="figures">
+        <figure>
+            <img src="~/Content/img/reports/module.jpg" />
+            <figcaption>Add/update module interface.</figcaption>
+        </figure>
+        <figure>
+            <img src="~/Content/img/reports/server-block.jpg" />
+            <figcaption>Add/update server-block interface.</figcaption>
+        </figure>
+        <figure>
+            <img src="~/Content/img/reports/report.jpg" />
+            <figcaption>Example report generated for one client.</figcaption>
+        </figure>
+    </div>
 </div>
-<!-- /ko -->

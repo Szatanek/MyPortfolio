@@ -1,5 +1,52 @@
-﻿<!-- ko if: name == "Paint" -->
-<div id="reports">
-    There should be sth about Paint application.
+﻿<div id="paint" data-bind="if: name == 'Paint'">
+    <div class="description">
+        <h2>Drawing application.</h2>
+        <p>
+            The drawing application was my recruitment task I had to do to get a job as a .NET developer.
+            This drawing tool could be written in any language any framework. 
+            It had to be functional drawing tool, so there were some requirments the application had to
+            meet, such as base figures, filling, rotations, scalling, undo and redo, saving and opening images
+            and so on.
+            The real constraint was the time because whole application had to be done in three days.
+        </p>
+        <h4>Brief overview of the application</h4>
+        <p>
+            The drawing application had all necessary functions implemented. So a user could draw in primary and 
+            secondary colours, switch the size of the brush, draw shapes and rectangles. 
+            Whole image could be resized, rotated and swapped horizontally and verticaly. Also undo and redo
+            functions were implemented.
+        </p>
+        <p>
+            In the application there was exception handling and user interaction validation provided.
+        </p>
+        <p>
+            Introduction of panels separate for each image was an unusual function that allowed user to have
+            many open images at the same time in the application.
+        </p>
+        <h4>Technologies & frameworks</h4>
+        <p>
+            The drawing application was written in the .NET Framework 4.5 technology using Windows Forms.
+            The application was written with usage od the MVP (Model - View - Presenter) design pattern.
+            That allowed to slice the application into three layers.
+            To provide drawing shapes and figures I took advantage of built in .NET frameworks drawing library.
+            Thanks to that I saved some time which I didn't have much.
+        </p>
+        <h4>Benefits and opportunities</h4>
+        <p>
+            This application let me show my experience in developing applications with Windows Forms. Moreover
+            I could implement some newly learnt design patterns such as factory, strategy and command pattern.
+            Introducing command pattern especially made me proud because undo/redo functions are the main purpose
+            for implementing the command pattern and I managed to do that.
+        </p>
+    </div>
+    <div class="figures">
+        <figure>
+            <img src="~/Content/img/paint/main.jpg" />
+            <figcaption>Lookup of the application and its functions.</figcaption>
+        </figure>
+        <figure>
+            <img src="~/Content/img/paint/new img.jpg" />
+            <figcaption>New image interface.</figcaption>
+        </figure>
+    </div>
 </div>
-<!-- /ko -->

@@ -108,6 +108,8 @@
     <Content Include="Content\AboutMe.css" />
     <Content Include="Content\App.css" />
     <Content Include="Content\Experience.css" />
+    <Content Include="Content\img\paint\main.jpg" />
+    <Content Include="Content\img\paint\new img.jpg" />
     <Content Include="Content\img\profil.jpg" />
     <Content Include="Content\img\reports\module.jpg" />
     <Content Include="Content\img\reports\report.jpg" />

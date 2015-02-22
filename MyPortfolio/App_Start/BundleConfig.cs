@@ -28,7 +28,7 @@ namespace MyPortfolio.App_Start
                 .Include("~/Scripts/App/Subcategories/Portfolio/Reports.js")
                 .Include("~/Scripts/App/Subcategories/Portfolio/Paint.js")
                 .Include("~/Scripts/App/Subcategories/Portfolio/Meds.js")
-                .Include("~/Scripts/App/Subcategories/Portfolio/TCP.js")
+                .Include("~/Scripts/App/Subcategories/Portfolio/Laboratory.js")
                 .Include("~/Scripts/App/Subcategories/Experience/FP.js")
                 .Include("~/Scripts/App/Subcategories/Experience/inSolutions.js"));
 

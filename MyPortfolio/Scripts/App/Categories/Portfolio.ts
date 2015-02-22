@@ -7,7 +7,7 @@
                 new Reports(),
                 new Paint(),
                 new Meds(),
-                new TCP()
+                new Laboratory()
             ];
         }
     }

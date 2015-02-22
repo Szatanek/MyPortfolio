@@ -1,14 +1,11 @@
-﻿#reports{
-
-}
-
-#reports .description{
+﻿#portfolio .description{
+    margin-left: 20px;
     float: left;
     width: 50%;
 }
 
-#reports .figures{
+#portfolio .figures{
+    margin-top: 40px;
     float: left;
-    width: 40%;
-    margin-left: 10%;
+    width: calc(50% - 20px);
 }

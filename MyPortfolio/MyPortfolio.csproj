@@ -108,6 +108,9 @@
     <Content Include="Content\AboutMe.css" />
     <Content Include="Content\App.css" />
     <Content Include="Content\Experience.css" />
+    <Content Include="Content\img\laboratory\charts.jpg" />
+    <Content Include="Content\img\laboratory\main.jpg" />
+    <Content Include="Content\img\laboratory\server.jpg" />
     <Content Include="Content\img\paint\main.jpg" />
     <Content Include="Content\img\paint\new img.jpg" />
     <Content Include="Content\img\profil.jpg" />
@@ -154,7 +157,7 @@
     <Content Include="Views\AboutMe\AboutMe.cshtml" />
     <Content Include="Views\Portfolio\Paint.cshtml" />
     <Content Include="Views\Portfolio\Meds.cshtml" />
-    <Content Include="Views\Portfolio\TCP.cshtml" />
+    <Content Include="Views\Portfolio\Laboratory.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -176,7 +179,7 @@
     <TypeScriptCompile Include="Scripts\App\Subcategories\Portfolio\Meds.ts" />
     <TypeScriptCompile Include="Scripts\App\Subcategories\Portfolio\Paint.ts" />
     <TypeScriptCompile Include="Scripts\App\Subcategories\Portfolio\Reports.ts" />
-    <TypeScriptCompile Include="Scripts\App\Subcategories\Portfolio\TCP.ts" />
+    <TypeScriptCompile Include="Scripts\App\Subcategories\Portfolio\Laboratory.ts" />
     <TypeScriptCompile Include="Scripts\App\ViewModel.ts" />
     <TypeScriptCompile Include="Scripts\App\Categories\Experience.ts" />
     <TypeScriptCompile Include="Scripts\App\Categories\Portfolio.ts" />

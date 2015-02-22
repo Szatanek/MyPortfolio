@@ -1,0 +1,55 @@
+﻿<div id="laboratory" data-bind="if: name == 'Laboratory measurments'">
+    <div class="description">
+        <h2>Application gathering laboratory measurments</h2>
+        <p>
+            Application gathering laboratory measurments was written as a part of the
+            Project Based Learning project on my studies.
+            Objective of the project was to improve the SCADA (Supervisory Control And Data Aquisition)
+            system with new features. That SCADA system worked on the real sewage treatment plant.
+        </p>
+        <h4>Brief overview of the application</h4>
+        <p>
+            Idea of implementing this application using .NET technology was to show that some kinds of
+            applications used in industries could be developed using common languages, not only using
+            expensive SCADA systems.
+        </p>
+        <p>
+            Main fuction of the application was to enter measurements done in the laboratory and send them
+            to the main application in the sewage plant. Thanks to that measurements efficiency of water
+            purification in the plant could be calculated. 
+        </p>
+        <p>
+            What is more the application provided historical charts of sent measurements. There was also logging 
+            functionality so every measurment had sign of currently logged in user.
+        </p>
+        <p>
+            Measurements were sent to the server side application placed in the plant. The server was a simple
+            console application that was listening for data and saving it to a specific file.
+        </p>
+        <h2>Technological summary</h2>
+        <p>
+            The laboratory measurments system was written in the .NET Framework 4.0 in Win Forms. Communication
+            between applications was done via TCP sockets built-in the .NET Framework. Also charts functionality
+            was developed using solutions provided by .NET Framework.
+        </p>
+        <h2>What have I learnt?</h2>
+        <p>
+            Finally I had opportunity to make applications exchanging data between each other. Also I could
+            make basic security functionality with users and logging into the application.
+        </p>
+    </div>
+    <div class="figures">
+        <figure>
+            <img src="~/Content/img/laboratory/main.jpg" />
+            <figcaption>Measurments entry panel.</figcaption>
+        </figure>
+        <figure>
+            <img src="~/Content/img/laboratory/charts.jpg" />
+            <figcaption>Historical charts panel.</figcaption>
+        </figure>
+        <figure>
+            <img src="~/Content/img/laboratory/server.jpg" />
+            <figcaption>The server application.</figcaption>
+        </figure>
+    </div>
+</div>

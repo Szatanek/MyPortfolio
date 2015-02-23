@@ -1,13 +1,9 @@
-﻿<!-- ko if: name == "My experience"-->
-<div id="portfolio">
-    <!-- ko if: !subcategory() -->
-    <div id="portfolio-main">
+﻿<div id="experience" data-bind="if: name == 'My experience'">
+    <div id="experience-main" data-bind="if: !subcategory()">
         This is my experience category.
     </div>
-    <!-- /ko -->
-    <!-- ko with: subcategory-->
-    @Html.Partial("~/Views/Experience/FP.cshtml")
-    @Html.Partial("~/Views/Experience/inSolutions.cshtml")
-    <!-- /ko -->
+    <div id="experience-subcategory" data-bind="with: subcategory">
+        @Html.Partial("~/Views/Experience/FP.cshtml")
+        @Html.Partial("~/Views/Experience/inSolutions.cshtml")
+    </div>
 </div>
-<!-- /ko -->

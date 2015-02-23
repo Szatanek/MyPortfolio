@@ -1,5 +1,92 @@
-﻿<!-- ko if: name == "inSolutions" -->
-<div id="reports">
-    There should be sth about work done at inSolutions.
+﻿<div id="insolutions" data-bind="if: name == 'inSolutions'">
+    <figure class="title">
+        <img src="~/Content/img/experience/inSolutions.jpg" />
+    </figure>
+    <div class="description">
+        <h2 class="job-title">.NET Developer</h2>
+        <h4 class="time-span">July 2012 - September 2013</h4>
+        <p>
+            I have joined inSolutions due to mandatory practice which I had to serve to pass my studies.
+            When I started working at inSolutions I haven't known yet I would be a programmer for a living.
+            After practice period ended I got an offer from inSolutions crew to join them and work as a fully
+            priviledged member of their team. That was the offer I couldn't have rejected. I found programming
+            to be creative and I realy enjoyed it.
+        </p>
+        <h4>Tasks and responsibilities</h4>
+        <ul>
+            <li>
+                <p>
+                    Developing a module for Navireo system which alerts user while generating order with
+                    products that stays in magazine for some amount of time.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Developing a module for Navireo system which allows to choose replacement for selected
+                    product.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Developing a module which generates orders to deliverers with products that currently lacks on
+                    chosen warehouses.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Taking part in developing an application that generates orders and sends them to remote
+                    computers where these orders are being realized. After completion the order is closed and
+                    specific documents are generated.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Developing features in existing applications such as importing products to SubiektGT system
+                    from dbf files or generating payment order in Raiffeisen Polbank format and many other
+                    smaller features.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Correcting bugs that were found in existing applications.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Contacting with client and precising tasks being developed.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Deploying applications to clients environments.
+                </p>
+            </li>
+        </ul>
+        <figure>
+            <img src="~/Content/img/experience/navireo.jpg" />
+        </figure>
+        <h4>Brief description</h4>
+        <p>
+            Work done in inSolutions was mainly focused on integration with the ERP/CRM systems done by InsERT.
+            Standalone applications were integrated with many small applications such as SubiektGT and GestorGT.
+            Navireo, the vital InsERT's application has modular architecture so most additions to the Naviero were
+            just seperate modules available in Navireo.
+        </p>
+        <p>
+            Applications were developed using C# in .NET Framework 2.0 and .NET Framework 3.5. Graphic user interface
+            was created using WinForms. To add a little bit freshness of GUI there were used the DevExpress controls.
+        </p>
+        <p>
+            Applications were connected to the SqlServer database. The communication was usually done by stored procedures
+            that involved creating, reading, updating and removing objects. On the application side communication with 
+            data stored in database was done either by using ADO.NET or by LINQ To Sql implementation.
+            When using LINQ To Sql the main design pattern was MVP that allowed reuse of commands, minimized duplication
+            of code and introduced simple architecture of applications.
+        </p>
+        <h4>Technical summary (acronym exibition)</h4>
+        <p>
+            .NET 2.0, .NET 3.5, Visual Studio 2010, MS Sql Server 2008R2, TFS, WinForms, MVP, LINQ, 
+            LINQ To Sql, ADO.NET, DevExpress, Code Rush,
+        </p>
+    </div>
 </div>
-<!-- /ko -->

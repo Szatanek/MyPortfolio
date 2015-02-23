@@ -6,7 +6,8 @@
             this.subcategories = [
                 new Reports(),
                 new Paint(),
-                new Meds(),
+                // TODO: insert meds subcategory
+                //new Meds(),
                 new Laboratory()
             ];
         }

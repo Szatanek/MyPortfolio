@@ -120,6 +120,9 @@
     <Content Include="Content\img\reports\report.jpg" />
     <Content Include="Content\img\reports\server-block.jpg" />
     <Content Include="Content\Portfolio.css" />
+    <Content Include="Content\svg\future-processing.svg">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

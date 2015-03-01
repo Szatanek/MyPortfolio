@@ -14,3 +14,8 @@
     margin-left: 20px;
     color: rgba(0, 0, 0, 0.5);
 }
+
+#future-processing .title-link{
+    width: 30%;
+    cursor: pointer;
+}
